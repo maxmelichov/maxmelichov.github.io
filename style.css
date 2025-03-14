@@ -3,118 +3,162 @@ body {
     font-family: Arial, sans-serif;
     background: #f9f9f9;
     color: #333;
-  }
+}
   
-  header {
+header {
     background: #409cff;
     color: #fff;
     text-align: center;
     padding: 40px 10px;
-  }
+}
   
-  header h1 {
+header h1 {
     margin-bottom: 10px;
     font-size: 2.5rem;
-  }
+}
   
-  header p {
+header p {
     font-size: 1.2rem;
-  }
+}
   
-  .maintainers {
+.maintainers {
     margin-top: 15px;
     font-size: 1rem;
-  }
+}
   
-  .github-link {
+.github-link {
     text-align: center;
     margin: 20px;
-  }
+}
   
-  .github-link a {
+.github-link a {
     background: #409cff;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
-  }
+}
   
-  .github-link a:hover {
+.github-link a:hover {
     background: #267fd1;
-  }
+}
   
-  section {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-  }
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
   
-  section h2 {
+section h2 {
     text-align: center;
     font-size: 2rem;
     margin: 40px 0;
-  }
-  
-  .dataset {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    padding: 20px;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    direction: rtl;
-  }
-  
-  .audio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .audio-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  
-  audio {
+}
+
+/* Table styling - new additions */
+.dataframe.tg {
     width: 100%;
-  }
-  
-  @media (min-width: 768px) {
-    .audio-group {
-      flex-direction: row;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+.tg td, .tg th {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg th {
+    background-color: #409cff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tg td {
+    background-color: #EBF5FF;
+}
+
+/* Make the table responsive */
+@media (max-width: 800px) {
+    .dataframe.tg {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
-  
-    .audio-group div {
-      flex: 1;
-      margin: 0 5px;
+    
+    audio {
+        width: 150px;
     }
-  }
-  
-  footer {
+}
+
+/* Audio player styling */
+audio {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 15px 10px;
     margin-top: 50px;
     font-size: 0.9rem;
-  }
-  
+}
+
+/* Keep any useful styles from your existing table CSS */
+.tg .tg-0pky {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-fymr {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Slider styling from your HTML */
+.slider {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0 auto;
+    display: block;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #409cff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #409cff;
+    cursor: pointer;
+}
