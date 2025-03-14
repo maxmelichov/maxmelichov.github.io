@@ -90,16 +90,17 @@ section h2 {
     }
     
     audio {
-        width: 150px;
+        width: 220px; /* Increased from 150px to 220px for mobile */
     }
 }
 
 /* Audio player styling */
 audio {
     width: 100%;
-    max-width: 200px;
+    max-width: 350px; /* Increased from 200px to 350px */
     margin: 0 auto;
     display: block;
+    height: 40px; /* Added height property for larger controls */
 }
 
 .wrapper {
