@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #409cff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 10px;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  .maintainers {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  
+  .github-link {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .github-link a {
+    background: #409cff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .github-link a:hover {
+    background: #267fd1;
+  }
+  
+  section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0;
+  }
+  
+  .dataset {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    direction: rtl;
+  }
+  
+  .audio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .audio-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .audio-group {
+      flex-direction: row;
+    }
+  
+    .audio-group div {
+      flex: 1;
+      margin: 0 5px;
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+  
