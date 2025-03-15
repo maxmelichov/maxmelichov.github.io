@@ -96,11 +96,8 @@ section h2 {
 
 /* Audio player styling */
 audio {
-    width: 100%;
-    max-width: 350px; /* Increased from 200px to 350px */
-    margin: 0 auto;
-    display: block;
-    height: 40px; /* Added height property for larger controls */
+    width: 200px;
+    height: 40px;
 }
 
 .wrapper {
