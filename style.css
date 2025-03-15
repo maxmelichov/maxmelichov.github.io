@@ -84,6 +84,23 @@ section h2 {
 
 .tg td {
     background-color: #EBF5FF;
+    padding: 12px 8px; /* Increased padding */
+    vertical-align: middle;
+    text-align: center;
+    min-width: 100px; /* Ensure minimum width for cells with audio */
+}
+
+/* Column containing audio should have more space */
+.tg td:nth-child(3), 
+.tg td:nth-child(4), 
+.tg td:nth-child(5),
+.tg td:nth-child(6) {
+    min-width: 320px; /* Give audio columns more width */
+}
+
+/* Hebrew text column should be narrower */
+.tg td:nth-child(2) {
+    max-width: 300px;
 }
 
 /* Make the table responsive - improved mobile layout */
@@ -118,9 +135,9 @@ section h2 {
 /* Audio player styling - increased size */
 audio {
     width: 100%; /* Make audio player responsive */
-    max-width: 250px; /* Increased from 200px */
+    max-width: 300px; /* Increased from 250px to give more space */
     height: 40px;
-    margin: 0 auto;
+    margin: 10px auto; /* Added vertical margin for breathing space */
     display: block;
 }
 
