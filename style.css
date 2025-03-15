@@ -201,3 +201,51 @@ footer {
     background: #409cff;
     cursor: pointer;
 }
+
+/* Updated column and audio styling */
+
+/* Make all table data cells have the same width */
+.dataframe.tg th,
+.dataframe.tg td {
+    width: 20%; /* Set equal width for all columns */
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 10px;
+}
+
+/* First column (index) can be smaller */
+.dataframe.tg th:first-child,
+.dataframe.tg td:first-child {
+    width: 5%;
+    min-width: 40px;
+}
+
+/* Second column (Hebrew text) */
+.dataframe.tg th:nth-child(2),
+.dataframe.tg td:nth-child(2) {
+    width: 25%;
+    max-width: 350px;
+}
+
+/* Audio columns - all the same width */
+.dataframe.tg th:nth-child(n+3),
+.dataframe.tg td:nth-child(n+3) {
+    width: 20%;
+    min-width: 320px;
+}
+
+/* Audio player styling - consistent size */
+audio {
+    width: 100%;
+    max-width: 300px; /* Standardized size for all audio players */
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Remove the audio-small ID styling and replace with class */
+.audio-small {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+}
