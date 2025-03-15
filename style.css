@@ -106,6 +106,15 @@ section h2 {
     }
 }
 
+/* Make the table scroll horizontally on small screens instead of breaking layout */
+@media (max-width: 1200px) {
+    .dataframe.tg {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
 /* Audio player styling - increased size */
 audio {
     width: 100%; /* Make audio player responsive */
