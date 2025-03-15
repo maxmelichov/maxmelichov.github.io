@@ -48,8 +48,9 @@ section {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;  /* Reduce padding */
     box-sizing: border-box;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
   
 section h2 {
@@ -58,17 +59,21 @@ section h2 {
     margin: 40px 0;
 }
 
-/* Table styling - new additions */
+/* Table styling - improved for centering and responsive layout */
 .dataframe.tg {
     width: 100%;
     margin: 30px auto;
     border-collapse: collapse;
+    table-layout: fixed; /* Add fixed table layout */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    display: block; /* Make table a block element for better control */
 }
 
 .tg td, .tg th {
-    padding: 12px;
+    padding: 12px 8px; /* Reduce padding */
     text-align: center;
     vertical-align: middle;
+    word-wrap: break-word; /* Allow text to wrap */
 }
 
 .tg th {
@@ -81,23 +86,33 @@ section h2 {
     background-color: #EBF5FF;
 }
 
-/* Make the table responsive */
+/* Make the table responsive - improved mobile layout */
 @media (max-width: 800px) {
     .dataframe.tg {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+        width: 100%;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+    
+    .tg td, .tg th {
+        padding: 8px 4px; /* Further reduce padding on mobile */
     }
     
     audio {
-        width: 220px; /* Increased from 150px to 220px for mobile */
+        width: 100%;
+        max-width: 180px; /* Set max-width for mobile */
     }
 }
 
-/* Audio player styling */
+/* Audio player styling - increased size */
 audio {
-    width: 200px;
+    width: 100%; /* Make audio player responsive */
+    max-width: 250px; /* Increased from 200px */
     height: 40px;
+    margin: 0 auto;
+    display: block;
 }
 
 .wrapper {
